@@ -1,0 +1,74 @@
+
+/* Navigation Bar */
+
+#navbar{
+flex-direction: column;
+}
+#navbar ul li{
+    font-size: 1rem;
+    margin: 0px;
+ }
+ 
+#navbar ul li a {
+    padding: 3px 10px;
+  }
+
+#navbar ul li a:hover{
+    border-radius: 5px;
+  }
+  
+
+/* home */
+#home {
+    padding: 0px 3px;
+    height: 325px;
+}
+#home h1{
+    text-align: center;
+    font-size: 2rem;
+}
+#home p{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+#home::before{
+    height: 450px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.9;
+}
+/* Service */
+
+#services{
+    margin: 15px;
+    flex-direction: column;
+    background-color: beige;
+}
+#services .box {
+    margin: 0px 0px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Client */
+
+#client-section {
+    height: 100%;
+}
+#clients{
+    flex-wrap: wrap;
+}
+/* Contect us */
+#contact-box form{
+    width: 80%;
+}
+.client-item {
+    padding: 7px;
+}
+
+/* Utility section */
+.h-primary{
+    font-size: 2rem;
+    padding: 5px;
+}   

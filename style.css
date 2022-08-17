@@ -1,0 +1,246 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Veriable */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0PX;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+#logo{ 
+    margin: 4px 40px;
+}
+#logo img{
+    height: 66px;
+    margin: 10px 10px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Secular One', sans-serif;
+}
+
+#navbar ul li{
+   list-style: none;
+   font-size: 1.8rem;
+}
+#navbar ul li a {
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+}
+#navbar ul li a:hover{
+  text-decoration: underline;
+  color: black;
+  background-color: white;
+}
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 396px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../images/MAINBG.jpg')no-repeat center center/cover ;
+    position :absolute;
+    top: 0px;
+    left: 0PX;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.9;
+}
+#home h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+#home p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn{
+    padding: 3px 25px;
+    margin: 5px;
+    border: 5px red;
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 20px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.btn:hover{
+    /* padding: 3px 25px;
+    margin: 5px;
+    border: 5px red; */
+    background-color: rgba(219, 112, 112, 0.486);
+    /* border-radius: 20px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    cursor: pointer; */
+}
+
+/* Services Classes */
+
+#services{
+    margin: 15px;
+    display: flex;
+    background-color: beige;
+}
+#services .box{
+    border: 2px solid red;
+    border-radius: 18px;
+    background-color: rgb(248, 248, 248);
+    margin: 20px 60px;
+    padding: 20px;
+    margin-bottom: 25px;
+
+}
+
+#services .box img{
+    height: 130px;
+    margin: auto;
+    display:block;
+
+}
+#services .box p{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+
+}
+
+/* Client Section */
+
+#client-section{
+    position: relative;
+    height: 270px;
+    border: 5px solid white;
+}
+#client-section h1{
+    color: white;
+    border: 2px solid rgb(153, 153, 153);
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(/images/BG1.jpg);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#clients{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    /* margin-bottom: 50px; */
+}
+.client-item{
+    padding:40px;
+}
+#clients img{
+    height: 120px;
+}
+
+/* Contact Section */
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url(/images/CBG.jpg) no-repeat center center/cover; 
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border: 4px solid rgb(150, 150, 150);
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Footer section */
+
+footer{
+    background: black;
+    font-size: 20px;
+    color: white;
+    
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(0, 0, 0);
+}   
+.h-secondery{
+    font-size: 5 rem;
+    padding: 12px;
+    font-family: 'Ubuntu', sans-serif;
+}    
+.center{
+    text-align: center;
+}
+#contact h1,label {
+    color: white;
+}
